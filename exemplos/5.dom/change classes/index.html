@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conpecode #3 - Javascript</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .fruta {
+            letter-spacing: 10px;
+            line-height: 2em;
+        }
+
+        .maca {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: red;
+            color: white;
+        }
+
+        .abacaxi {
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+            background-color: palegoldenrod;
+            color: green;
+        }
+
+        .fonteGrande {
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Conpecode #3 - Javascript</h3>
+        <div class="fruta maca">O Lima</div>
+        <div class="fruta maca">gosta muito de</div>
+        <div class="fruta maca">abacaxis</div>
+        <div id="fim">=> fim da história <=</div>
+    </div>
+    <script>
+        let divsAbacaxi = document.getElementsByClassName("fruta");
+        for (let div of divsAbacaxi) {
+            div.className = "fruta abacaxi";
+            div.classList.add("fonteGrande");
+        }
+    </script>
+</body>
+</html>

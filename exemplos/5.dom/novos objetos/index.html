@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conpecode #3 - Javascript</title>
+    <style>
+        #container {
+            width: 100%;
+            height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div id="container">
+
+
+    </div>
+
+
+
+    <script>
+        let container = document.getElementById("container");
+
+        let titulo = document.createElement("h3");
+        titulo.innerHTML = "Conpecode #3 - Javascript";
+
+        let button = document.createElement("button");
+        button.innerHTML = "Botão";
+        button.style.backgroundColor =  "white";
+        button.style.color = "#FF4D00";
+        button.style.fontWeight = "bold";
+        button.style.padding = "1em 3em";
+        button.style.border = "2px solid #FF4D00";
+        button.style.borderRadius = "1em";
+        button.style.cursor = "pointer";
+
+        container.appendChild(titulo);
+        container.appendChild(button);
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conpecode #3 - Javascript</title>
+    <style>
+        .container {
+            width: 100%;
+            height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Conpecode #3 - Javascript</h3>
+
+    </div>
+    <script>
+        const potencia = (a, n) => {
+            let x = 1;
+            for (i = 0; i < n; i = i + 1) {
+                x = x * a;
+            }
+            return x;
+        }
+
+        const soma = (a, b) => a + b;
+
+
+        const minahFuncao = (a, callback) => {
+            let x = a * a;
+            if (isNaN(x)) {
+                callback()
+                return;
+            }
+            return x;
+        }
+
+        console.log(minahFuncao("batata", () => window.alert("nao batata")));
+    </script>
+</body>
+</html>

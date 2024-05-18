@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conpecode #3 - Javascript</title>
+    <style>
+        .container {
+            width: 100%;
+            height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Conpecode #3 - Javascript</h3>
+
+    </div>
+    <script>
+        const largest = (lista) => {
+            var maior = 0;
+            let comprimento = lista.length;
+            for (i = 0; i < comprimento; i = i + 1) {
+                if (lista[i] > maior) {
+                    maior = lista[i];
+                }
+            }
+            return maior;
+        }
+
+        console.log(largest([3, 4, 5, 1, 5]));
+    </script>
+</body>
+</html>
